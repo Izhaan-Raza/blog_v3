@@ -1,0 +1,137 @@
+/* Reset styles */
+html, body, div, h1, h2, p, img, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+    color: #333;
+    background-color: #ffcc93;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 190px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.photo{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    /* center align */
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.about{
+    height: 100px;
+    width: 100%;
+    padding-top: 90px;
+    padding-left: 10px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: centre;
+    font-size: smaller;
+
+    z-index: -1;
+    position: fixed;
+    background-color: #ffcc93;
+}
+
+header {
+    background-color: #ffbf75;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;    
+    position: fixed;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.hdr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pfp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    background: url(../assets/pfp.jpg) no-repeat center center / cover;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.pfp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #ffbf75;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    padding: 0px;
+    margin: 0;
+    line-height: 22px;
+    
+}
+
+.card h2 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.card p.date {
+    color: #2e2e2e;
+    font-style: italic;
+    align-self: flex-end;
+    font-size: smaller;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    .header{
+        width: 20px;
+    }
+}
