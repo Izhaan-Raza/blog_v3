@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&display=swap');
+
+
 /* Reset styles */
 html, body, div, h1, h2, p, img, ul, li {
     margin: 0;
@@ -16,7 +19,7 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding-top: 190px;
+    padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -24,7 +27,7 @@ body {
 .photo{
     width: 100%;
     border-radius: 20px;
-    overflow: hidden;
+    height: 100%;
     object-fit: cover;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
     /* center align */
@@ -36,20 +39,30 @@ body {
 }
 
 .about{
-    height: 100px;
-    width: 100%;
-    padding-top: 90px;
+    height: auto;
+    width: 95%;
+    padding-top: 100px;
     padding-left: 10px;
-    padding-right: 20px;
+    padding-right: 2px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: centre;
+    
     font-size: smaller;
-
-    z-index: -1;
-    position: fixed;
-    background-color: #ffcc93;
+    
+    
 }
+
+.naaam{
+    align-self: flex-start;
+    font-size: 40px;
+    
+}
+
+.abt{
+    font-size: 14px;
+}
+
 
 header {
     background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
@@ -62,32 +75,48 @@ header {
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
 }
 
+.name{
+    position: fixed;
+    left: 60%;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Dancing Script", cursive;
+    display: none;
+    font-weight: 700;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    z-index: 2;
+    transition: all 2s ease;
+    visibility: hidden;
+}
 
 
 .hdr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
+    padding: 10px;
+    height: 80px;
+    background: url(../assets/banner.jpeg) no-repeat center center/cover;
+    transition: all 0.5s ease;
 }
 
-.name {
-    font-size: 20px;
-    font-weight: bold;
-}
+
 
 .pfp {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+    margin-left: 10px;
+    top: 40px;
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
     overflow: hidden;
-    margin-right: 10px;
-    background: url(../assets/pfp.jpg) no-repeat center center / cover;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+
 }
 
 .pfp img {
