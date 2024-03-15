@@ -77,7 +77,7 @@ header {
 
 .name{
     position: fixed;
-    left: 60%;
+    left: 10px;
     color: #fff;
     font-size: 20px;
     font-family: "Dancing Script", cursive;
@@ -115,8 +115,10 @@ header {
     width: 90px;
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 10px rgba(223, 223, 223, 0.685);
     transition: all 0.5s ease;
+    right: 10px;
+    
 }
 
 .pfp img {
