@@ -11,8 +11,8 @@ html, body, div, h1, h2, p, img, ul, li {
 body {
     font-family: 'Roboto', sans-serif;
     
-    color: #e4e4e4;
-    background-color: #142d4c;
+    color: #1d1d1d;
+    background-color: #dba77f;
     line-height: 1.6;
 }
 /*  */
@@ -132,7 +132,7 @@ header {
 }
 
 .card {
-    background-color: #385170;
+    background-color: #ffc99f;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     margin-bottom: 20px;
